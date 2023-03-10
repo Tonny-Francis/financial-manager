@@ -58,7 +58,7 @@ export default function NavBar() {
     };
 
     return (
-        <Box className='flex flex-col w-full p-2'>
+        <Box className='flex flex-col w-full p-2 bg-primary'>
             <Box className='flex flex-row m-2 justify-between'>
                 <Box sx={{ minWidth: 38, minHeight: 38 }} className='flex items-center'>
                     <img src={Logo} />
