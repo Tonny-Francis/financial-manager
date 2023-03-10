@@ -6,5 +6,5 @@ export default function Home() {
         <Box className='flex flex-col w-full'>
             <NavBar />
         </Box>
-    )
+    );
 }

@@ -1,11 +1,10 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
-import { Button } from '@mui/material';
-import ButtonSytled from './ButtonStyled';
-import Logo from '../assets/img/Logo-FM.png'
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
+import ButtonSytled from "./ButtonStyled";
+import Logo from "../assets/img/Logo-FM.png";
 
 interface StyledTabsProps {
     children?: React.ReactNode;
@@ -19,15 +18,15 @@ const StyledTabs = styled((props: StyledTabsProps) => (
         TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
     />
 ))({
-    '& .MuiTabs-indicator': {
-        display: 'flex',
-        justifyContent: 'center',
-        backgroundColor: 'transparent',
+    "& .MuiTabs-indicator": {
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "transparent",
     },
-    '& .MuiTabs-indicatorSpan': {
+    "& .MuiTabs-indicatorSpan": {
         maxWidth: 40,
-        width: '100%',
-        backgroundColor: '#00606C',
+        width: "100%",
+        backgroundColor: "#00606C",
     },
 });
 
@@ -38,16 +37,16 @@ interface StyledTabProps {
 const StyledTab = styled((props: StyledTabProps) => (
     <Tab disableRipple {...props} />
 ))(({ theme }) => ({
-    textTransform: 'none',
+    textTransform: "none",
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
     marginRight: theme.spacing(1),
-    color: 'rgba(255, 255, 255, 0.7)',
-    '&.Mui-selected': {
-        color: '#fff',
+    color: "rgba(255, 255, 255, 0.7)",
+    "&.Mui-selected": {
+        color: "#fff",
     },
-    '&.Mui-focusVisible': {
-        backgroundColor: 'rgba(100, 95, 228, 0.32)',
+    "&.Mui-focusVisible": {
+        backgroundColor: "rgba(100, 95, 228, 0.32)",
     },
 }));
 
